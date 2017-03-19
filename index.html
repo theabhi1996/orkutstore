@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html>
+<title>orkut store</title><link rel="shortcut icon" href="7.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+<style>
+.w3-sidenav a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+.mySlides {display:none;}
+
+
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a.header {
+    background-color: #e2e2e2; /* Add a darker background color for headers */
+    cursor: default; /* Change cursor style */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-white w3-collapse w3-top" style="z-index:3;width:240px" id="mySidenav">
+  <div class="w3-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
+    <h3 class="w3-wide"><b> <img src="1.png" alt="logo" style="width:190px;height:60px;border:0"></b></h3>
+  </div>
+ 
+  <div class="w3-padding-4 w3-large w3-text-grey" style="font-weight:bold">
+   
+   </button>
+  
+ 
+  
+
+  
+  <li class="w3-dropdown-hover">
+    <a href="#">Online recharge<strong></strong><i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-">
+  <small>    <a href="https://paytm.com/" > 1. Paytm</a>
+<a href="https://www.freecharge.in"> 2. FreeCharge</a>
+ <a href="https://www.mobikwik.com/">3. MobiKwik</a>
+ <a href="https://www.rechargeitnow.com">4. RechargeItNow</a>
+ <a href="https://www.easymobilerecharge.com/">5. EasyMobileRecharge</a>
+ <a href="https://www.justrechargeit.com/">6. JustRechargeIt</a>
+ <a href="https://www.myrecharge.co.in/">7. MyRecharge</a>
+    </small></div>
+  </li>
+  
+  
+  <li class="w3-dropdown-hover">
+    <a href="#">Discount Coupon<strong></strong><i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-1">
+     <small> <a href="https://www.couponraja.in/">  1.CouponRaja </a>
+<a href="http://www.couponzguru.com"> 2.Couponzguru</a>
+ <a href="https://www.coupondunia.in">3. CouponDunia.</a>
+ <a href="https://www.freecouponindia.in">4.FreeCouponIndia</a>
+ <a href="https://freekaamaal.com">5.  FreeKaaMaal</a>
+ <a href="https://www.grabon.in">6. GrabOn</a>
+ <a href="https://www.coupontrends.in">7. CouponTrends</a>
+   </small> </div>
+  </li>
+  
+  
+  <li class="w3-dropdown-hover">
+    <a href="#"> Travel & hotel websites<strong></strong><i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.makemytrip.com"> 1. MakeMyTrip</a>
+<a href="https://www.tripadvisor.in">2. tripadvisor.com</a>
+ <a href="https://www.expedia.co.in">3. expedia.co.in</a>
+ <a href="https://www.yatra.com/">4. yatra.com</a>
+ <a href="https://www.cleartrip.com">5. cleartrip.com</a>
+ <a href="www.booking.com">6. booking.com</a>
+ <a href="https://www.goibibo.com">7. goibibo.com</a>
+ <a href="https://www.travelguru.com">8. travelguru.com</a></small>
+ 
+ 
+    </div>
+  </li>
+  
+<p>    <img src="cart.png" style="width:20px;" >shopping site</p>
+	
+  <li class="w3-dropdown-hover">
+    <a href="#"> Clothing<strong></strong><i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>  <a href="https://www.jabong.com">1.jabong.com</a>
+      <a href="https://www.myntra.com">2.myntra.com</a>
+	    <a href="https://www.koovs.com">3.koovs.com</a>
+      <a href="https://www.voonik.com">4.voonik.com</a>
+      <a href="https://craftsvilla.com">5.craftsvilla.com</a>  </small>
+    </div>
+  </li>
+  
+  
+  <li class="w3-dropdown-hover">
+    <a href="#"> Furniture<strong></strong><i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.pepperfry.com">1.pepperfry.com</a>
+      <a href="https://www.fabfurnish.com">2.fabfurnish.com</a>
+	    <a href="#homeoofficestyle.com">3.homeoofficestyle.com</a>
+      <a href="https://www.ikea.com">4.furlenco.com.</a>
+      <a href="https://www.ikea.com">5.ikea.com</a> </small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+  <li class="w3-dropdown-hover">
+    <a href="#"> Jewelry<strong></strong><i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small> <a href="#https://www.titan.co.in">1.titan.co.in  </a>
+      <a href="https://www.caratlane.com/">2.caratlane.com</a>
+	    <a href="https://www.malabargoldanddiamonds.com">3.malabargoldanddiamonds.com </a>
+      <a href="https://www.voylla.com">4.voylla.com</a>
+      <a href="https://www.ethoswatches.com">5.ethoswatches.com</a>   </small>
+ 
+ 
+    </div>
+  </li>
+  
+
+	  
+  <li class="w3-dropdown-hover">
+    <a href="#"> Office Products<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.xerox.com"> 1. xerox.com</a>
+<a href="https://www.staples.com">2. staples.com</a>
+ <a href="https://www.barcodesinc.com">3. barcodesinc.com</a>
+ <a href="https://www.dcgpac.com">4.  dcgpac.com</a>
+ <a href="https://www.offcedepot.com">5. offcedepot.com</a>
+</small> </div>
+  </li>
+ <li class="w3-dropdown-hover">
+    <a href="#"> sports<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.decathlon.in"> 1. decathlon.in</a>
+<a href="https://www.nike.com">2. nike.com</a>
+ <a href="https://www.herocycles.com">3. herocycles.com</a>
+ <a href="https://www.khelmart.com">4.khelmart.com</a>
+ <a href="https://www.metroshoes.net">5. metroshoes.net</a>
+</small> </div>
+  </li>
+<p>  <img src="air.png" style="width:25px;" ">Travel</p>
+ <li class="w3-dropdown-hover">
+    <a href="#"> Hotel<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="#https://www.booking.com"> 1. booking.com</a>
+<a href="https://www.trivago.in">2. trivago.in</a>
+ <a href="https://www.airbnb.co.in">3.  airbnb.co.in</a>
+
+
+ <a href="signup.phphttps://www.oyorooms.com">4. oyorooms.com</a>
+ 
+ 
+
+ 
+</small> </div>
+  </li>
+ <li class="w3-dropdown-hover">
+    <a href="#"> Airlines and airports<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="#https://www.yatra.com"> 1. yatra.com</a>
+<a href="https://www.goindigo.in">2. goindigo.in</a>
+ <a href="https://www.jetairways.com">3. jetairways.com</a>
+ <a href="https://www.spicejet.com">4.  spicejet.com</a>
+ <a href="https://www.airindia.in">5. airindia.in</a>
+</small> </div>
+  </li>
+
+ <li class="w3-dropdown-hover">
+    <a href="#"> Roads and Highways<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.redbus.in"> 1. redbs.in</a>
+
+ <a href="https://www.flightnetwork.com">2.   flightnetwork.com </a>
+
+</small> </div>
+  </li>
+ <li class="w3-dropdown-hover">
+    <a href="#">Tourism<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.irctc.co.in"> 1. irctc.co.in</a>
+<a href="https://www.makemytrip.com/">2.makemytrip.com  </a>
+ <a href="https://www.tripadvisor.in/">3.tripadvisor.in</a>
+ <a href="https://www.cleartrip.com/">4.cleartrip.com  </a>
+ <a href="https://www.goibibo.com/">5.goibibo.com</a>
+</small> </div>
+  </li>
+  <p><img src="news.png" style="width:25px;" ">News and Media </p>
+ <li class="w3-dropdown-hover">
+    <a href="#"> university  press<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://global.oup.com/?cc=ca"> 1. oup.com
+   </a>
+<a href="http://global.oup.com/?cc=ca">2. collegemagazine.com </a>
+ <a href="https://www.bepress.com/">3. bepress.com</a>
+
+</small> </div>
+  </li>
+
+ <li class="w3-dropdown-hover">
+    <a href="#"> Magazines<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://www.indiatodaygroup.com/"> 1. intoday.in</a>
+<a href="https://www.forbes.com">2. forbes.com</a>
+ <a href="https://www.boldsky.com">3. boldsky.com</a>
+ <a href="https://www.buzzfeed.com">4. buzzfeed.com</a>
+ 
+</small>
+ 
+ 
+    </div>
+  </li>
+    
+  <li class="w3-dropdown-hover">
+    <a href="#"> Newspapers<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.indiatimes.com"> 1.indiatimes.com </a>
+<a href="https://indianexpress.com">2.indianexpress.com </a>
+ <a href="https://http://www.firstpost.com/">3. firstpost.in</a>
+ <a href="https://www.india.com">4. india.com</a>
+ <a href="https://www.news18.com">5.news18.com </a>
+
+ </small>
+    </div>
+  </li>
+  
+ <li class="w3-dropdown-hover">
+    <a href="#">Sports<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https//:www.cricbuzz.com"> 1.cricbuzz.com  </a>
+<a href="https://www.espncricinfo.com">2. Espncricinfo.com  </a>
+ <a href="https://www.goal.com/en-india/">3. goal.com</a>
+ <a href="https://sport.ndtv.com">4. sport.ndtv.com</a>
+ <a href="https://http://sportzwiki.com">5.sportzwiki.com</a>
+ 
+</small>
+ 
+ 
+    </div>
+  </li> <li class="w3-dropdown-hover">
+    <a href="#"> Technology News<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.gsmarena.com"> 1.gsmarena.com</a>
+<a href="https://www.cnet.com">2. cnet.com</a>
+ <a href="https://yourstory.com">3. yourstory.com</a>
+ <a href="https://http://www.digit.in/">4.digit.in </a>
+ <a href="https://http://www.gizbot.com/">5.gizbot.com</a>
+ 
+</small>
+ 
+ 
+    </div>
+  </li>
+  <p><img src="film.png" style="width:25px;" > Entertainment</p>
+  
+  <li class="w3-dropdown-hover">
+    <a href="#"> TV AND VIDEO<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.youtube.com"> 1. youtube.com</a>
+<a href="http://www.hotstar.com">2. hotstar.com</a>
+ <a href="https://www.dailymotion.com/in">3. dailymotion.com</a>
+ <a href="signup.phphttps://www.netflix.com/in/">4. netflix.com</a>
+  <a href="signup.phphttps://www.primevideo.com">.5 primevideo.com</a>
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#"> Music and Audio<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://mr-jatt.com"> 1. mr-jatt.com</a>
+<a href="https://www.voot.com">2. voot.com</a>
+ <a href="https://www.gaana.com">3. gaana.com</a>
+ <a href="https://raagtune.com">4. raagtune.com</a>
+  <a href="https://mp3mad.com">.5 mp3mad.com</a>
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#"> Photography<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.shutterstock.com"> 1. shutterstock.com</a>
+<a href="signup.phphttps://www.flickr.com">2. flickr.com</a>
+ 
+ <a href="https://pixabay.com">3. pixabay.com</a>
+  <a href="https://photobucket.com">4. photobucket.com</a>
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#"> Entertainment news<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://bollywoodlife.com"> 1. bollywoodlife.com</a>
+<a href="http://www.foolo.in">2. follo.in</a>
+ <a href="https://wwww.missmalini.com">3. missmalini.com</a>
+ <a href="http://bollywoodlover.com">4. bollywoodlover.com</a>
+  <a href="https://www.starsunfolded.com">.5 starsunfolded.com</a>
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  <li class="w3-dropdown-hover">
+    <a href="#">Movies Download Sites <strong></strong><i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-2">
+      <small><a href="https://www.youtube.com"><strong>   1. you tube </strong></a>
+
+</strong></a>
+ <a href="http://www.hdmoviesmp4.org">2. hdmoviesmp4.org </a>
+ <a href="http://www.3gpmovies.in/index.xhtml">3.  3gpmovies.in 
+ </a>
+ <a href="https://www.tamilrockers.mx">4.  tamilrockers.ws</a>
+ <a href="https://www.erosnow.com/welcome">5.erosnow.com </a>
+ <a href="http://www.movieloverz.org">6.movieloverz.org </a></small>
+    </div>
+  </li>
+   <p><img src="car.png" style="width:20px;" >Vehicles</p>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#"> Automotive News<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://www.team-php.com"> 1. team-php.com</a>
+<a href="https://www.drivespark.com">2. drivespark.com</a>
+ <a href="http://overdrive.in">3. overdrive.in</a>
+ <a href="http://www.motoroids.com">4. Motoroids.com</a>
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#">Aviation<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://flightradar.com"> 1. flightradar.com</a>
+<a href="https://www.boeing.com">2. boeing.com</a>
+ <a href="https://www.airliners.net">3. airliners.net</a>
+ 
+ 
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#"> car Buying<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.cardekho.com"> 1. cardekho.com</a>
+<a href="https://autoportal.com">2. autoportal.com</a>
+ <a href="https://www.zigwheels.com">3. zigwheels.com</a>
+ <a href="https://droom.in">4. droom.in</a>
+ 
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#">Car Rentals<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.olacabs.com"> 1. olacabs.com</a>
+<a href="https://www.zoomcar.com">2. zoomcar.com</a>
+ <a href="htttp;//www.savaari.com">3. savaari.com</a>
+ <a href="https://www.uber.com/en-IN/">3. uber.com</a>
+  <a href="https://www.clearcarrental.com">.5 clearcarrental.com</a>
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#"> Motorcycles<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.honda2wheelersindia.com"> 1.honda2wheelersindia.com</a>
+<a href="https://www.bikewale.com">2. bikewale.com </a>
+ <a href="https://www.bikedekho.com">3. bikedekho.com</a>
+ <a href="https://royalenfield.com">4. royallenfield.com</a>
+  <a href="http://www.bajajttpsauto.com">5. bajajauto.com</a>
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#"> Train<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://www.indianrail.gov.in"> 1. indianrail.gov.in
+   </a>
+<a href="https://indiarailinfo.com">2. indiarailinfo.com </a>
+ 
+ <a href="http://erail.in">3.erail.in</a>
+  <a href="http://trainstatus.info">4. trainstatus.info</a>
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#">Motorsport <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.motorsport.com"> 1. motorsport.com</a>
+<a href="https://www.formula1.com">2. formula1.com</a>
+ <a href="https://www.drift.com">3. drift.com</a>
+ <a href="https://www.crash.net">4. crash.net</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  <p><img src="yoga.png" style="width:25px;" >Beauty and fitness</p><hr>
+   <li class="w3-dropdown-hover">
+    <a href="#">Beauty<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>  
+<a href="https://www.purplle.com">1.purplle.com </a>
+ <a href="https://beautyhealthtips.in">2.beautyhealthtips.in </a>
+ <a href="https://www.bebeautiful.in">3.bebeautiful.in</a>
+ <a href="http://stylesatlife.com">4.stylesatlife.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   
+   <li class="w3-dropdown-hover">
+    <a href="#">Fitness<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://money.bhaskar.com/"> 1.money.bhaskar.com </a>
+<a href="https://www.bodybuilding.com">2.bodybuilding.com </a>
+ <a href="https://www.menshealth.com">3.menshealth.com </a>
+ <a href="http://www.prevention.com">4.prevention.com</a>
+ <a href="https://www.mensfitness.com">5.mensfitness.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   
+   <li class="w3-dropdown-hover">
+    <a href="#">Hair<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.latest-hairstyles.com"> 1.latest-hairstyles.com </a>
+<a href="https://www.richfeel.com">2.richfeel.com </a>
+ <a href="https://www.matrix.com">3.matrix.com </a>
+ <a href="http://hairstyleonpoint.com">4.hairstyleonpoint.com</a>
+   <a href="htttp://www.hairbuddha.netp">5.hairbuddha.net</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   
+   <li class="w3-dropdown-hover">
+    <a href="#">Skin care <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://www.nivea.in"> 1.nivea.in </a>
+<a href="https://paulaschoce.com">2.paulaschoce.com </a>
+ <a href="https://acnemantra.com">3.acnemantra.com </a>
+ <a href="https://www.olivaclinic.com">4.olivaclinic.com.</a>
+ <a href="https://justhers.in">5.justherbs.in</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   
+   <li class="w3-dropdown-hover">
+    <a href="#">Weight loss<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://truweight.in"> 1. truweight.in  </a>
+<a href="https://nofat.in">2.nofat.in </a>
+ <a href="https://www.3weekdiet.com">3.3weekdiet.com </a>
+ <a href="http://www.weightlossresources.co.uk">4.weightlossresources.co.uk</a>
+ <a href="https://www.health-total.com">5.health-total.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <p><img src="book.png" style="width:20px;" >Book and Literature</p>
+   <li class="w3-dropdown-hover">
+    <a href="#">Book Retailers<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.dummies.com"> 1. dummies.com</a>
+<a href="https://us.sagepub.com/en-us/nam/home">2.sagepub.com </a>
+ <a href="https://www.abebooks.com">3.abebooks.com </a>
+ <a href="https://www.audible.com">4.audible.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   
+   <li class="w3-dropdown-hover">
+    <a href="#">E books<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.wattpad.com"> 1.wattpad.com </a>
+<a href="https://www.safaribooksonline.com">2. safaribooksonline.com</a>
+ <a href="https://bookboon.com>3.bookboon.com </a>
+ <a href="https://www.nap.edu">4.nap.edu</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  <p><img src="chart.png" style="width:20px;" >Business and industry</P>
+   <li class="w3-dropdown-hover">
+    <a href="#">Biotechonology and pharmaceuticals<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://nbe.edu.in"> 1.nbe.edu.in</a>
+<a href="https://www.thermofisher.com/in/en/home.html">2.thermofisher.com</a>
+ <a href="https://vitanepharma.com">3.vitanepharma.com </a>
+
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">Business services <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.salesforce.com/in/?ir=1"> 1.salesforce.com</a>
+<a href="https://www.tcs.com/Pages/default.aspx">2.tcs.com</a>
+ 
+ <a href="https://www.wipro.com">3.wipro.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">chemicals <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.basf.com/in/en.html"> 1.basf.com</a>
+<a href="https://www.castrol.com">2.castrol.com</a>
+ <a href="https://www.dow.com">3.dow.com </a>
+ <a href="https://www.thirumalaichemicals.com">4.thirumalaichemicals.com </a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">construction and maintenance<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://intecc.com"> 1.intecc.com</a>
+<a href="https://www.beautifulhomes.com">2.beautifulhomes.com</a>
+ <a href="https://ciplafield.com">3.ciplafield.com </a>
+ <a href="https://inhabitat.com">4.inhabitat.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">Energy <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.indane.co.in"> 1.indane.co.on</a>
+
+ <a href="https://www.ril.com"">2.ril.com </a>
+ 
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">industrial goods and services<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://www.industrybuying.com"> 1.industrybuying.com</a>
+<a href="http://techwireasia.com">2.techwireasia.com</a>
+ 
+ <a href="https://www.honeywell.com">3.honeywell.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">Metals and mining  <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://sail.co.in"> 1.sail.co.in</a>
+<a href="https://nalcoindia.com">2.nalcoindia.com</a>
+ <a href="https://www.jindalsteelpower.com">3.jindalsteelpower.com </a>
+
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#"> publishing and printing <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="www.springer.com/in/"> 1.springer.com</a>
+
+
+ <a href="https://academic.oup.com/journals/">2.oxfordjournals.org</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">Real Estate <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.99acres.com/NRI-Real-Estate.htm"> 1.99acres.com</a>
+<a href="https://www.magicbricks.com">2.magicbricks.com</a>
+ <a href="https://www.commonfloor.com/">3.commanfloor.com </a>
+ <a href="https://housing.com">4.housing.com</a>
+  <a href="https://www.nobroker.in">5.nobroker.in</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">Textiles and Nonwovens<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://bonorganik.in"> 1.bonorganik.in</a>
+<a href="https://www.fibre2fashion.com">2.fibre2fashion.com</a>
+ <a href="https://www.cheerupindia.com">3.cheerupindia.com </a>
+ <a href="http://colourtex.co.in">4.colourtex.co.in</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  <P><img src="woman.png" style="width:25px;" >career and Education</P>
+   <li class="w3-dropdown-hover">
+    <a href="#">Business Training<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.accaglobal.com/ca/en.html"> 1.accaglobal.com</a>
+<a href="https://www.infosecinstitute.com">2.infosecinstitute.com</a>
+ <a href="https://tradingacademy.com">3.tradingacademy.com </a>
+ <a href="https://rcplindia.in/">4.rcplindia.in</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">Education <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.w3schools.com/w3css/default.asp"> 1.w3schools.com</a>
+<a href="https://onlinetestseriesmadeeasy.in">2.onlinetestseriesmadeeasy.in</a>
+ <a href="https://www.udemy.com">3. udemy.com</a>
+ <a href="https://ernet.in">4.ernet.in</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#"> <strong> Competitive Exams </strong><i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-2">
+    <small> <p>notification</p>
+	 <a href="http://sarkarinaukricareer.in">  1.sarkarinaukricareer.in/</a>
+<a href="http://talentsprint.com"> 2. talentsprint.com</a>
+ <a href="http://www.indgovtjobs.in">3. indgovtjobs.in</a>
+ <a href="https://www.bankexamsindia.com">4. bankexamsindia.com</a>
+ <p>Free Exam Content</p>
+ <a href="https://www.ibpsexamguru.in">5.ibpsexamguru.in </a>
+<a href="https://www.jagranjosh.com"> 6.www.jagranjosh.com </a>
+ <a href="https://www.gktoday.in">7.www.gktoday.in</a>
+ <a href="http://www.indiabix.com">8.indiabix.com</a>
+ <p>online test</P>
+<a href="htttps;//www.freeonlinetest.in"> 9.freeonlinetest.in </a>
+ <a href="https://www.indiabix.com">10.indiabix.com</a>
+ <a href="https://www.cybermocktest.com">11.cybermocktest.com</a>
+
+</small>
+    </div>
+  </li>
+    
+ 
+  <li class="w3-dropdown-hover">
+   <a href="#"> job portals<strong></strong><i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-2">
+     <small>  <a href="https://www.naukri.com"><strong>   1. Naurki.com</strong></a>
+<a href="https://www.shine.com"> <strong>2. shine .com</strong></a>
+
+ <a href="https://www.linkedin.com">3. Linkedin.com</a>
+
+ <a href="http://babajob.com">4. babajobs.com</a>
+ 
+ </small>
+ 
+    </div>
+  </li>
+  
+  
+  
+   </li><P><img src="computer.png" style="width:25px;" >computer  and Electronics</p>
+   <li class="w3-dropdown-hover">
+    <a href="#">computer hardware <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.ibm.com/in-en/"> 1.ibm.com</a>
+<a href="https://www1.ap.dell.com/content/default.aspx?c=in&l=en&s=gen&~ck=cr">2.dell.com</a>
+ <a href="https://hwww.intel.in/content/www/in/en/homepage.html">3. intel.com</a>
+ <a href="https://www.amd.com/en">4.amd.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li> </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">computer security <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.ca.com/us/products/ca-advanced-authentication.html"> 1.arcot.com</a>
+<a href="https://www.avg.com/in-en/homepage">2.avg.com</a>
+ <a href="https://www.mcafee.com/us/index.html">3. mcafee.com</a>
+ <a href="https://www.siteadvisor.com/final/index.html">4.siteadvisor.com </a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li> </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">consumer electronics<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.samsung.com/in/"> 1.samsung.com</a>
+<a href="https://www.apple.com">2.apple.com</a>
+ <a href="https://www8.hp.com/in/en/home.html">3.hp.com</a>
+ <a href="https://www3.lenovo.com/in/en/">4.lenovo.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li> </li>
+   <li class="w3-dropdown-hover">
+    <a href="#">software <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://github.com"> 1.github.com</a>
+<a href="https://www.microsoft.com/india/">2.microsoft.in</a>
+ <a href="https://www.office.com">3. office.com</a>
+ <a href="https://www.ucweb.com">4.ucweb.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+   </li>
+ 
+  
+  <P><img src="om.png" style="width:25px;" >Finance</p>
+  
+  
+  
+   <li class="w3-dropdown-hover">
+    <a href="#">Accounting <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://icai.org"> 1.icai.org</a>
+<a href="https://taxguru.in">2.taxguru.in</a>
+ <a href="https://cleartax.in">3.cleartax.in</a>
+ <a href="wwwhttps://charteredclub.com">4.charteredclub.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+   <li class="w3-dropdown-hover">
+    <a href="#">Banking<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.onlinesbi.com/"> 1.onlinesbi.com</a>
+<a href="https://www.hdfcbank.com">2.hdfcbank.com</a>
+ <a href="https://www.icicibank.com">3.icicibank.com</a>
+ <a href="https://www.axisbank.com">4.axisbank.co.in</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+   <li class="w3-dropdown-hover">
+    <a href="#">insurance<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://customer.onlinelic.in"> 1.onlinelic.in</a>
+<a href="https://licindia.in">2.licindia.in</a>
+ <a href="https://www.hdfclife.com">3.hdfclife.com</a>
+ <a href="https://www.bajajfinserv.in">4.bajajfinserv.in</a>
+  
+
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  <p><img src="stand.png" style="width:25px;" >food and drink </p>
+   <li class="w3-dropdown-hover">
+    <a href="#">Food  <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.zomato.com/ncr"> 1.zomato.com</a>
+<a href="https://www.dominos.co.in/">2.dominos.co.in</a>
+ <a href="https://www.swiggy.com">3.swiggy.com</a>
+ <a href="https://www.foodpanda.in">4.foodpanda.in</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+   <li class="w3-dropdown-hover">
+    <a href="#">cooking and Recipes<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://vegrecipesofindia.com"> 1.vegrecipesofindia.com </a>
+<a href="http://food.ndtv.com">2.food.ndtv.com</a>
+ <a href="http://nishamadhulika.com">3.nishamadhulika.com .</a>
+ <a href="http://foodviva.com">4.foodviva.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  <P><img src="hospital.png" style="width:25px;" >Health</p>
+    <li class="w3-dropdown-hover">
+    <a href="#">Natural medicine  <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.curejoy.com"> 1.curejoy.com</a>
+<a href="http://drbatras.com">2.drbatras.com</a>
+ <a href="https://mercola.com">3.mercola.com</a>
+ <a href="http://myyog.com">4.myyog.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+    <li class="w3-dropdown-hover">
+    <a href="#">Child health <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://babycenter.com"> 1.babycenter.com</a>
+<a href="http://kidshealth.org">2.kidshealth.org</a>
+ <a href="http://www.parenting.com/recipes">3.parenting.com</a>
+ <a href="https://www.newkidscenter.com">4.newkidscenter.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li> 
+  
+ <p><img src="home.png" style="width:25px;" >Home and garden</p><li class="w3-dropdown-hover">
+    <a href="#">Interior decor <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.asianpaints.com"> 1.asianpaints.com</a>
+<a href="http://gharexpert.co">2.gharexpert.com</a>
+ <a href="https://www.godrejinterio.com/Godrejinterio/index.aspx">3.godrejinterio.com</a>
+ <a href="https://www.countryliving.com">4.countryliving.com</a>
+</small>
+    </div>
+  </li>
+   <li class="w3-dropdown-hover">
+    <a href="#"> Home improvement <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>  <a href="https://www.goodhousekeeping.com"> 1.goodhousekeeping.com</a>
+<a href="hhouttp://housebeautiful.com">2.housebeautiful.com </a>
+ <a href="https://doityourself.com">3.doityourself.com</a>
+
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+  <p><img src="wifi.png" style="width:25px;" >internet and telecom</p>
+  <li class="w3-dropdown-hover">
+    <a href="#">Domain names and Register<i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.bigrock.in"> 1.bigrock.in</a>
+<a href="https://in.godaddy.com">2.godaddy.com</a>
+ <a href="https://byjus.com">3.byjus.com</a>
+ <a href="https://who.is">4.who.is</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li><li class="w3-dropdown-hover">
+    <a href="#">Online Marketing  <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.taboola.com"> 1.taboola.com</a>
+<a href="https://sokrati.com">2.sokrati.com</a>
+ <a href="https://www.outbrain.com">3.outbrain.com</a>
+ <a href="https://www.hubspot.com">4.hubspot.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li><li class="w3-dropdown-hover">
+    <a href="#">Search Engine <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.google.co.in/?gfe_rd=cr&ei=Ofq_WL3kGK3T8gejyqrgAw&gws_rd=ssl"> 1.google.com</a>
+<a href="https://www.justdial.com">2.justdial.com</a>
+ <a href="https://www.ask.com">3.ask.com</a>
+ <a href="https://www.bing.com">4.bing.com</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li><li class="w3-dropdown-hover">
+    <a href="#">web design  <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="https://www.canva.com"> 1.canva.com</a>
+
+ <a href="http://smallseotools.com">2.smallseotools.com</a>
+ <a href="https://www.template.net">3.template.net</a>
+  
+
+</small>
+ 
+ 
+    </div>
+  </li><li class="w3-dropdown-hover">
+    <a href="#">File Sharing  <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+   <small>   <a href="http://rbg.to/index8.php"> 1.rarbg.to</a>
+<a href="http://extratorrent.cc">2.extratorrent.cc</a>
+ <a href="http://en.savefrom.net/1-how-to-download-youtube-video/">3.savefrom</a
+  
+
+</small>
+ 
+ 
+    </div>
+  </li>
+  
+   
+  
+ <br><hr>
+  <small>	  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."></small>
+   </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-24">
+  <span class="w3-left w3-wide">
+  <img src="1.png" alt="logo" style="width:170px;height:60px;border:0">
+  
+  </span>
+  <a href="javascript:void(0)" class="w3-right w3-opennav" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container" id="portfolio">
+    <a href="#"><img src="1.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <P><P><br>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Top site</span> 
+      
+     <a href="https://www.flipkart.com"><button class="w3-btn w3-white"><img src="2.png" style="width:25px;"> flipkart</button></a>
+     <a href="https://www.snapdeal.com"> <button class="w3-btn w3-white w3-hide-small"><img src="3.png" style="width:39px;"> 
+	  snapdeal</button></a>
+          <a href="https://www.amazon.in"> <button class="w3-btn w3-white w3-hide-small"><img src="4.png" style="width:20px;">Amazon.</button></a>   
+	       <a href="https://www.paytm.com"><button class="w3-btn w3-white w3-hide-small"><img src="5.png" style="width:30px;">paytm</button></a>
+          
+  
+    </div>
+  </header>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+  
+  <div class="w3-content w3-section" style="max-width:800px">
+
+  <img class="mySlides" src="new2.jpg" style="width:100%">
+  <img class="mySlides" src="new3.jpg" style="width:100%">
+  
+  
+</div><br> 
+<!-- Page content -->
+<h4 class="w3-opacity">Top offer</h4>
+<hr>
+
+<div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <a href="www.myntra.com/flash-sale-launch"> <img src="new5.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        </a><p class="w3-opacity">Extra 50% off <b>MYNTRA.COM</b> </p>
+      </div>
+    </div>
+	
+	  <div class="w3-half w3-margin-bottom">
+     <a href="https://paytm.com/movies"> <img src="new8.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+       </a> <p class="w3-opacity">Falt 100 rs cashback,<b>PAYTM.COM<b></p>
+      </div>
+    </div>
+	
+	 <div class="w3-half w3-margin-bottom">
+     <a href="http://www.koovs.com/"> <img src="new19.jpg" alt="Norway" style="width:95%">
+      <div class="w3-container w3-white">
+        <p class="w3-opacity">!!KOOVS.COM!! </p>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+    <a href="http://www.jabong.com/">  <img src="new16.jpg" alt="Austria" style="width:100%">
+     </a> <div class="w3-container w3-white">
+
+	  
+	  
+	  
+	  
+	  
+        <p class="w3-opacity">!!JABONG.COM!!</p>
+       
+      </div>
+  </div>
+  </div>
+        
+  
+  
+  
+ <h4 class="w3-opacity" >Travling offer</h4>
+<hr>
+
+<div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <a href="https://www.oyorooms.com/deals/cpl-local?id=133"><img src="new10.jpg" alt="Norway" style="width:100%">
+       </a> <div class="w3-container w3-white">
+        <p class="w3-opacity">OYO Welcome couples..<b>Get 25% off! oYo for couples</p>
+    </div>
+    </div>
+	
+	  <div class="w3-half w3-margin-bottom">
+     <a href="https://www.makemytrip.com/promotion/includes/free-cancellation-offer-11012017.html?intid=HPLP_hero_DHTL_MboxFail_new">  <img src="new9.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+       </a> <p class="w3-opacity"><strong>50% instant discount on most of the hotels across india.<b>!MAKE MY TRIP!</b> </p>
+      </div>
+    </div></diV>
+	<br>
+	 <h4 class="w3-opacity">Movie Tickets, Plays, Sports, Music Concerts</h4><hr>
+	 <div class="w3-row-padding"><p>Book my show</p>
+	 <div class="w3-half w3-margin-bottom">
+       <a href="https://in.bookmyshow.com/movies/nowshowing"> <img src="new11.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+       </a> <p  class="w3-opacity"><strong>Book my show</strong> </p>
+      </div>
+    </div>
+	<div class="w3-half w3-margin-bottom">
+       <a href="https://in.bookmyshow.com/movies/nowshowing"> <img src="new13.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+       </a> <p  class="w3-opacity"><strong>Book my show</strong> </p>
+      </div>
+    </div>
+	<P>PAYTM</p>
+    <div class="w3-half w3-margin-bottom">
+       <a href="https://paytm.com/movies"><img src="new12.jpg" alt="Austria" style="width:100%">
+      </a><div class="w3-container w3-white">
+      
+        <p class="w3-opacity">!!Paytm!! </p>
+       
+      </div>
+  </div> 
+    <div class="w3-half w3-margin-bottom">
+       <a href="https://paytm.com/movies"><img src="new14.jpg" alt="Austria" style="width:100%">
+      </a><div class="w3-container w3-white">
+      
+        <p class="w3-opacity">!!Paytm!! </p>
+       
+      </div>
+  </div>
+  <P>FREECHARGE</p>
+    <div class="w3-half w3-margin-bottom">
+       <a href="https://www.freecharge.in/"><img src="new17.png" alt="Austria" style="width:100%">
+      </a><div class="w3-container w3-white">
+      
+        <p class="w3-opacity">!!FreeCharge!! </p>
+       
+      </div>
+  </div> 
+    <div class="w3-half w3-margin-bottom">
+       <a href="https://www.freecharge.in/"><img src="new18.png" alt="Austria" style="width:100%">
+      </a><div class="w3-container w3-white">
+      
+        <p class="w3-opacity">!!FreeCharge!! </p>
+       
+      </div>
+  </div>
+  
+  
+  </div>
+
+
+
+ <h4 class="w3-opacity" >Discount coupons</h4>
+<hr>
+  <!-- Product grid -->
+  <div class="w3-row w3-scale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+          <a href=" https://www.coupondunia.in/flipkart"> <img src="19.jpg" style="width:100%"></a>
+        <p><br><b></b></p></a>
+      </div>
+	  
+	  
+      <div class="w3-container">  <a href=" https://www.coupondunia.in/paytm">
+        <img src="20.jpg" style="width:100%"></a>
+        <p><br><b></b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container"> <a href=" https://www.coupondunia.in/paytm">
+          <img src="21.jpg" style="width:110%">
+          </span>
+          <div class="w3-display-middle w3-display-hover">
+           
+          </div>
+        </div>
+        <p><br><b></b></p>
+      </div>
+	  
+	  
+      <div class="w3-container"> <a href=" www.grabon.in/dominos-coupons/">
+        <img src="24.png" style="width:100%">
+        <p><br><b></b></p></a>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container"> <a href=" https://www.coupondunia.in/snapdeal">
+        <img src="20.png" style="width:100%"></a>
+        <p><br><b></b></p>
+      </div>
+	  
+	  
+	  
+      <div class="w3-container">
+        <div class="w3-display-container"> <a href=" https://www.coupondunia.in/ajio">
+          <img src="23.jpg" style="width:100%"></a>
+          <span class="w3-tag w3-display-topleft"></span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-btn"> <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p><br><b class="w3-text-red"></b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container"> <a href="http://www.grabon.in/myntra-coupons/ ">
+        <img src="22.jpg" style="width:80%"></a>
+        <P><br><b></b></p>
+      </div>
+      <div class="w3-container"> <a href=" http://www.grabon.in/foodpanda-coupons/">
+        <img src="25.png" style="width:100%"></a>
+        <p><br><b></b></p>
+      </div>
+    </div>
+  </div>
+</diV>
+<h4 class="w3-opacity" >Top site by category </h4><hr>
+<h6>shoping site</h6>
+
+   <p class="w3-opacity" >
+     <a href="https://www.flipkart.com"><button class="w3-btn w3-white"><img src="2.png" style="width:30px;"> flipkart</button></a>
+     <a href="https://www.snapdeal.com"> <button class="w3-btn w3-white w3-hide-small"><img src="3.png" style="width:39px;"> 
+	  snapdeal</button></a>
+          <a href="https://www.amazon.in"> <button class="w3-btn w3-white w3-hide-small"><img src="4.png" style="width:30px;">Amazon.</button></a>   
+	      
+
+
+		  <a href="https://www.paytm.com"><button class="w3-btn w3-white w3-hide-small"><img src="5.png" style="width:30px;">paytm</button></a>
+      
+  <a href="https://www.koovs.com"><button class="w3-btn w3-white"><img src="new22.jpg" style="width:30px;"> Koovs</button></a>
+     <a href="https://www.voonik.com"> <button class="w3-btn w3-white w3-hide-small"><img src="new21.jpg" style="width:39px;"> 
+	  VOONIK</button></a>
+          <a href="https://www.myntra.com"> <button class="w3-btn w3-white w3-hide-small"><img src="22.jpg" style="width:30px;">MYNTRA.</button></a>   
+	      
+</p>
+<h6>Travel & hotel</h6>
+		
+
+
+
+
+
+
+
+
+		 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+ 
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      
+  <div class="w3-col s4 w3-justify"> <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Paytm</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> freecharge</p>
+        <br>
+        <i class="fa fa-facebook-official w3-xlarge w3-hover-text-indigo"></i>
+        <i class="fa fa-instagram w3-xlarge w3-hover-text-purple"></i>
+        <i class="fa fa-twitter w3-xlarge w3-hover-text-light-blue"></i>
+        <i class="fa fa-pinterest w3-xlarge w3-hover-text-red"></i>
+        <i class="fa fa-flickr w3-xlarge w3-hover-text-blue"></i>
+      </div>
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="about.html">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+      
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> hubble communication</p>
+        <p><i class="fa fa-fw fa-phone"></i> 8375007409</p>
+        <p><i class="fa fa-fw fa-envelope"></i> orkutstore@gmail.com</p>
+       </div>
+    </div>
+  </footer>
+
+  <div class="w3- w3-center w3-padding-24"> Copyright © orkutstore.com,Designed &  Developed by Abhishek Mishra
+  </div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-padding-jumbo">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-closebtn w3-xlarge w3-hover-text-grey w3-margin"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-btn w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+<script>
+
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+
+
+
+
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+
+
+
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
